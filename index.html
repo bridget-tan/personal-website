@@ -12,7 +12,7 @@
     <link rel="icon" href="https://cardadfar.github.io/stuco_webdev_website/assets/files/cool-icon.png">                    <!-- Insert Icon -->
     <script src="./Give Me a Title!_files/jquery.min.js.download"></script>
 </head>
-<body>
+<body bgcolor="#1c1c1c">
 	<style type="text/css">
 
 		body {
@@ -26,12 +26,14 @@
 			margin-left: auto;
 			margin-right: auto;
 			position: static;
-			margin-top: 75px;
+			margin-top: 50px;
 		}
 
 		.content {
 			width: 50%;
 			margin-left: 25%;
+			color: white;
+			font-family: Arial;
 		}
 
 		.content_img {
@@ -64,21 +66,79 @@
 			text-decoration: none;
 		}
 
+		.nav-bar > .element:hover {
+			text-decoration: bold;
+			background: #1f1f1f;
+			font-weight: 550;
+			/*text-decoration: bold;*/
+		}
+
+		.nav-bottom {
+			width: 125px;
+			/*height: 50px;*/
+			/*margin: 0;*/
+		    /*display: inline-block;*/
+		    margin-left: auto;
+		    margin-right: auto;
+			/*margin-bottom: 0; */
+		}
+
 		.item {
 			text-align: center;
-			position: relative;
+			/*position: relative;*/
 			margin-top: 150px;
 			margin-bottom: 150px;
+			color: white;
+			font-family: Arial;
 		}
 
 		.item > .header {
 			text-decoration: bold;
 			margin-top: 20px;
 			margin-bottom: 0;
+			color: white;
 		}
 
 		.item > .description {
 			margin: 0;
+			color: white;
+		}
+
+		a {
+			text-decoration: none;
+			color: white;
+			font-family: Arial;
+		}
+
+		a.resume {
+			width: 10%;
+			text-align: center;
+			display: inline-block;
+			color: white;
+			background: black;
+			padding-top: 10px;
+			padding-bottom: 10px;
+			margin-top: 10px;
+			margin-bottom: 10px;
+			margin-left: 45%;
+		}
+
+		a.icon {
+			margin-right: 20px;
+			/*margin-right: auto;*/
+			text-align: center;
+			display: inline-block;
+			/*margin: 0;*/
+		}
+
+		a.resume:hover {
+			font-weight: 600;
+		}
+
+		.icon {
+			width: 40px;
+			height: 40px;
+			/*margin: 0;*/
 		}
 
 
@@ -87,7 +147,7 @@
     	<a href="https://bridget-tan.github.io/personal-website/" class="element"> Home </a>
     	<a href="https://bridget-tan.github.io/personal-website/" class="element"> Projects </a>
     	<a href="https://bridget-tan.github.io/personal-website/" class="element"> Skills </a>
-    	<a href="https://bridget-tan.github.io/personal-website/" class="element"> Interests </a>
+    	<a href="https://bridget-tan.github.io/personal-website/" class="element"> Experience </a>
     	<a href="https://bridget-tan.github.io/personal-website/" class="element"> Contact </a>
     </div>
 
@@ -97,9 +157,11 @@
     	</div>
     	<h1 class=header>Hi.</h1>
 		
-		<p> I'm Bridget. I'm a student at Carnegie Mellon University pursuing my Master's degree in Electrical and Computer Engineering. I recently graduated from CMU with a Bachelor's degree in ECE and a minor in <a href="http://coursecatalog.web.cmu.edu/collegeofengineering/undergraduatedesignatedminors/#audioengineeringtext" target="_blank">audio engineering</a>. My coursework is primarily focused in signal and image processing. </p>
-    	
+		<p> I'm Bridget. I'm a student at Carnegie Mellon University pursuing my Master's degree in Electrical and Computer Engineering. I recently graduated from CMU with a Bachelor's degree in ECE and a minor in <a href="http://coursecatalog.web.cmu.edu/collegeofengineering/undergraduatedesignatedminors/#audioengineeringtext" target="_blank">audio engineering</a>. My coursework is primarily focused in signal and image processing. I'm currently building this website for a class, so more content will be added in the coming weeks.</p>
+
     </div>
+
+		<a class="resume" href="documents/Bridget Tan Resume.pdf">My Resume</a>
 
 	<div class=item>
     	<h3 class=header>MS in Electrical and Computer Engineering</h3>		
@@ -111,6 +173,15 @@
     	<h3 class=header>Minor in Audio Engineering</h3>		
 		<p class=description> Carnegie Mellon University - May 2019</p>
     	
+    </div>
+
+    <div class="nav-bottom">
+    	<a href="https://www.linkedin.com/in/bridget-tan/" class="icon"> 
+    		<img class="icon" src="images/linkedin-icon.png">
+    	</a>
+    	<a href="https://github.com/bridget-tan" class="icon"> 
+    		<img class="icon" src="images/github-icon.png">
+    	</a>
     </div>
 
     <script type="text/javascript" src="./Give Me a Title!_files/interactions.js.download"></script>    <!-- Insert JQuery Script -->
