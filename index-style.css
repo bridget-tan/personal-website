@@ -26,7 +26,7 @@ body {
 	text-align: center;
 }
 
-.header {
+.header-center {
 	text-align: center;
 }
 
@@ -146,9 +146,15 @@ body {
 	color: white;
 }
 
-.item > .description {
+.description {
+	margin-top: 0;
+	color: white;
+}
+
+.description-end {
 	margin: 0;
 	color: white;
+	margin-bottom: 50px;
 }
 
 .resume {
@@ -195,12 +201,12 @@ body {
 }
 
 .list-content {
-	margin-bottom: 50px;
+	margin-bottom: 75px;
 	margin-left: 0;
 }
 
 .list-subcontent {
-	margin-left: 20px;
+	margin-left: 30px;
 }
 
 .link:hover {
