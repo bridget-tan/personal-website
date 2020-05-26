@@ -4,19 +4,30 @@ body {
 	font-family: Arial;
 }
 
-.profile_image {
-	height: 400px;
+.profile-img {
+	height: 450px;
 	border-radius: 15%;
 	display: block;
 	margin-left: auto;
-	margin-right: auto;
+    margin-right:10%;
 	position: static;
-	margin-top: 50px;
+	margin-top: 75px;
+	float: left;
+}
+
+.profile {
+	height: 500px;
+	width: 60%;
+	margin-left: 20%;
+	color: white;
+	font-family: Arial;
+	display: block;
 }
 
 .content {
-	width: 50%;
-	margin-left: 25%;
+	width: 60%;
+	margin-left: 20%;
+	position: static;
 	color: white;
 	font-family: Arial;
 	display: block;
@@ -24,6 +35,14 @@ body {
 
 .content_img {
 	text-align: center;
+	width: 40%;
+}
+
+.profile-txt {
+    width:60%;
+    position: relative;
+    float: left;
+	margin-top: 100px;
 }
 
 .header-center {
@@ -132,8 +151,8 @@ body {
 
 .item {
 	text-align: center;
-	margin-top: 150px;
-	margin-bottom: 150px;
+	margin-top: 100px;
+	margin-bottom: 100px;
 	color: white;
 	font-family: Arial;
 }
@@ -243,5 +262,23 @@ p.description-end:hover  {
 	font-weight: bold;
 }
 
+a {
+	color: #eb4d4d;	
+}
 
+a:link {	
+	text-decoration:none
+}
+
+a:visited {	
+	text-decoration:none
+}
+
+a:hover {	
+	text-decoration:none
+}
+
+a:active {
+	font-weight: normal;
+}
 
