@@ -118,7 +118,6 @@ body {
 
 .underline-ltr:hover::before {
 	width: 100%;
-
 }
 
 .nav-bottom {
@@ -154,7 +153,24 @@ body {
 .description-end {
 	margin: 0;
 	color: white;
-	margin-bottom: 50px;
+	margin-top: 10px;
+	/*margin-bottom: 50px;*/
+    display: none;
+    font-size:16px;
+	font-weight: normal;
+    /*animation: 1.4s forwards hover-v linear;
+	animation-fill-mode: forwards;*/
+}
+
+p:hover .description-end {
+    display: inline-block;
+}
+
+p.description-end:hover  {
+    display: inline-block;
+	opacity: 100%;
+	background: white;
+	transition: all 3000ms ease-in-out 0s;
 }
 
 .resume {
@@ -221,3 +237,11 @@ body {
 	text-align: center;
 	display: inline-block;
 }
+
+.header { 
+    font-size:24px;
+	font-weight: bold;
+}
+
+
+
