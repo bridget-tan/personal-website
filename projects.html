@@ -48,23 +48,50 @@
 	    	<div class="row">
 				<div class="column-left" style="background-color: black; width: 25%">
 					<div class="tab">
-						<button class="tablinks" onmouseover="openCity(event, 'pw')" onclick="openCity(event, 'pw')" id="defaultOpen">Personal Website</button>
-						<button class="tablinks" onmouseover="openCity(event, 'toy-camera')" onclick="openCity(event, 'toy-camera')">Toy Camera</button>
-						<button class="tablinks" onmouseover="openCity(event, 'chiptune')" onclick="openCity(event, 'chiptune')">Chiptune/8-Bit Effect</button>
-						<button class="tablinks" onmouseover="openCity(event, 'lang-ID')" onclick="openCity(event, 'lang-ID')">Language Identification System</button>
-						<button class="tablinks" onmouseover="openCity(event, 'window-robot')" onclick="openCity(event, 'window-robot')">Window Washing Robot</button>
-						<button class="tablinks" onmouseover="openCity(event, 'dialog-sys')" onclick="openCity(event, 'dialog-sys')">Dialog System</button>
-						<button class="tablinks" onmouseover="openCity(event, 'kernel')" onclick="openCity(event, 'kernel')">Embedded Real Time Kernel</button>
+						<button class="tablinks" onclick="openCity(event, 'pw')" id="defaultOpen">Personal Website</button>
+						<button class="tablinks" onclick="openCity(event, 'toy-camera')">Toy Camera</button>
+						<button class="tablinks" onclick="openCity(event, 'chiptune')">Chiptune/8-Bit Effect</button>
+						<button class="tablinks" onclick="openCity(event, 'lang-ID')">Language Identification System</button>
+						<button class="tablinks" onclick="openCity(event, 'window-robot')">Window Washing Robot</button>
+						<button class="tablinks" onclick="openCity(event, 'dialog-sys')">Dialog System</button>
+						<button class="tablinks" onclick="openCity(event, 'kernel')">Embedded Real Time Kernel</button>
 					</div>
 			
 				</div>
 				<div class="column-right" style="width: 75%">
 					<div id="pw" class="tabcontent">
 						<h3>Spring 2020</h3>
-						<p>I made this personal website for <a href="https://cardadfar.github.io/stuco_webdev_website/index.html">StuCo: Building Personal Websites</a>, a student-taught course. Through this class, I learned the basics of website design, HTML, CSS, JavaScript, and jQuery. </p> 
+						<p>I made this personal website for <a href="https://cardadfar.github.io/stuco_webdev_website/index.html">StuCo: Building Personal Websites</a>, a student-taught course. Through this class, I learned the basics of website design, HTML, CSS, JavaScript, and jQuery. I will continue to use those skills to update this website.</p> 
 					</div>
 
 					<div id="toy-camera" class="tabcontent">
+						<!-- Slideshow container -->
+						<div class="slideshow-container slider" id="div1">
+
+							<!-- Full-width images with number and caption text -->
+							<div class="mySlides fade">
+								<div class="numbertext">1 / 2</div>
+								<img src="images/toy-camera1.jpg" style="max-height: 250px; max-width: 100%">
+								<div class="text">Toy camera front</div>
+							</div>
+
+							<div class="mySlides fade">
+								<div class="numbertext">2 / 2</div>
+								<img src="images/toy-camera2.jpg" style="max-height: 250px; max-width: 100%">
+								<div class="text">Toy camera back</div>
+							</div>
+							
+							<a class="prev" onclick="plusDivs(this, -1)">&#10094;</a>
+  							<a class="next" onclick="plusDivs(this, 1)">&#10095;</a>
+						</div>
+						<br>
+
+
+						<!-- The dots/circles -->
+						<div style="text-align:center">
+						  <span class="dot" onclick="currentSlide(1)"></span>
+						  <span class="dot" onclick="currentSlide(2)"></span>
+						</div>
 						<h3>February 2020</h3>
 						<p>My group of 3 fabricated a toy camera for our Intro to Making course. We assembled a frame from laser cut and 3D printed pieces and used an Arduino, electronics, and LEDs to replicate a real camera's functions. I was in charge of programming the electronics and assembling the circuits.</p>
 					</div>
@@ -80,8 +107,35 @@
 					</div>	
 
 					<div id="window-robot" class="tabcontent">
+						<!-- Slideshow container -->
+						<div class="slideshow-container slider" id="div2">
+
+							<!-- Full-width images with number and caption text -->
+							<div class="mySlides fade">
+								<div class="numbertext">1 / 2</div>
+								<img src="images/window-washing-robot.jpg" style="max-height: 250px; max-width: 100%">
+								<div class="text">Window Washing Robot</div>
+							</div>
+
+							<div class="mySlides fade">
+								<div class="numbertext">2 / 2</div>
+								<img src="images/robot-demo-img.png" style="max-height: 250px; max-width: 100%">
+								<div class="text">Image from our final demo</div>
+							</div>
+
+							<a class="prev" onclick="plusDivs(this, -1)">&#10094;</a>
+  							<a class="next" onclick="plusDivs(this, 1)">&#10095;</a>
+							</div>
+							<br>
+
+						<!-- The dots/circles -->
+						<div style="text-align:center">
+						  <span class="dot" onclick="currentSlide(1)"></span>
+						  <span class="dot" onclick="currentSlide(2)"></span>
+						</div>
+
 						<h3>Spring 2019</h3>
-						<p>For my undergraduate capstone, my team of 5 developed an autonomous robot that adheres to and cleans windows. The robot automatically navigates over a window pane, crosses over a barrier, and cleans a 5' x 6' total area in under 3 minutes. I was in charge of assembling the electronic components and circuitry of the robot. I also helped to develop the control, locomotion, adhesion, sensing, and cleaning subsystems.<br><br> More details about this project can be found on our <a href="https://sites.google.com/view/geickobot/home">capstone website</a>.</p>
+						<p>For my undergraduate capstone, my team of 5 developed an autonomous robot that can automatically adhere to and navigate over a window pane, cross over a barrier, and clean a 5' x 6' total area in under 3 minutes. The device uses ducted propellers to adhere to the window, wheels to move, and a sponge-based mechanism for cleaning. Proximity sensors and an IMU help the robot to navigate. I was in charge of assembling the electronic components and circuitry of the robot. I also helped to develop the control, locomotion, adhesion, sensing, and cleaning subsystems.<br><br> More details about this project can be found on our <a href="https://sites.google.com/view/geickobot/home">capstone website</a>.</p>
 					</div>	
 
 					<div id="dialog-sys" class="tabcontent">
