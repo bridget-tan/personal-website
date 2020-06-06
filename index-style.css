@@ -1,50 +1,41 @@
+/*Some CSS adapted from: w3schools.com, cardadfar.com, 
+cardadfar.github.io/stuco_webdev_website, makitweb.com*/
+
 body {
-	margin: 0;
-	padding:0px;
-	font-family: Arial;
-	background-color: #202020;
+    margin: 0;
+    padding:0px;
+    font-family: Arial;
+    background-color: #202020;
 }
 
 .profile-img {
-	max-width:90%;
-	max-height:100%;
-	min-width: 100px;
-	border-radius: 15%;
-	display: block;
-	margin-left: auto;
+    max-width:90%;
+    max-height:100%;
+    min-width: 100px;
+    border-radius: 15%;
+    display: block;
+    margin-left: auto;
     margin-right:10%;
-	margin-top: 75px;
-	float: left;
+    margin-top: 75px;
+    float: left;
 }
 
 .profile {
-	height: 500px;
-	width: 60%;
-	margin-left: 20%;
-	color: white;
-	font-family: Arial;
-	display: block;
+    height: 500px;
+    width: 60%;
+    margin-left: 20%;
+    color: white;
+    font-family: Arial;
+    display: block;
 }
 
 .content {
-	width: 70%;
-	margin-left: 15%;
-	position: static;
-	color: white;
-	font-family: Arial;
-	display: block;
-}
-
-.content_img {
-	text-align: center;
-	width: 40%;
-}
-
-.profile-txt {
-    width:60%;
-    /*position: relative;*/
-    float: left;
-	margin-top: 100px;
+    width: 70%;
+    margin-left: 15%;
+    position: static;
+    color: white;
+    font-family: Arial;
+    display: block;
 }
 
 .center {
@@ -55,131 +46,121 @@ body {
 }
 
 .box {
-	text-align: center;
-	border-width: 2px;
-	border-style: solid;
-	padding-top: 5px;
-	padding-bottom: 5px;
-	width: 50%;
-	margin-left: 25%;
+    text-align: center;
+    border-width: 2px;
+    border-style: solid;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 50%;
+    margin-left: 25%;
 }
 
 .margin-top-75 {
-	margin-top: 75px;
+    margin-top: 75px;
 }
 
 .margin-top-100 {
-	margin-top: 100px;
+    margin-top: 100px;
 }
 
 .nav-bar {
-	width: 100%;
-	height: 50px;
-	margin: 0;
-	background: black;
-
-	position: sticky;
-	position: -webkit-sticky; 
-	top: 0; 
-	opacity: 0.75;
+    width: 100%;
+    height: 50px;
+    margin: 0;
+    background: black;
+    position: sticky;
+    position: -webkit-sticky; 
+    top: 0; 
+    opacity: 0.87;
 }
 
 .nav-bar > .title {
-	line-height: 50px;
-	text-align: center;
-	color: white;
-	display: inline-block;
-	background: black;
-	margin: 0px 20px;
-	font-weight: bold;
-	font-family: Verdana;
-	letter-spacing: 1px;
-	text-decoration: none;
-	opacity: 1;
-	position: relative;
+    line-height: 50px;
+    text-align: center;
+    color: white;
+    display: inline-block;
+    background: black;
+    margin: 0px 20px;
+    font-weight: bold;
+    font-family: Verdana;
+    letter-spacing: 1px;
+    text-decoration: none;
+    opacity: 1;
+    position: relative;
 }
 
 .nav-bar .element {
-	line-height: 50px;
-	text-align: center;
-	color: white;
-	display: inline-block;
-	background: black;
-	margin: 0px 20px;
-	font-weight: bold;
-	text-decoration: none;
-	opacity: 1;
-	position: relative;
+    line-height: 50px;
+    text-align: center;
+    color: white;
+    display: inline-block;
+    background: black;
+    margin: 0px 20px;
+    font-weight: bold;
+    text-decoration: none;
+    opacity: 1;
+    position: relative;
 }
 
 .nav-bar .element:hover {
-	opacity: 1;
+    opacity: 1;
 }
 
 .nav-bar .element::before {
-	transition: 300ms;
-	height: 5px;
-	content: "";
-	position: absolute;
-	background-color: white;
-
+    transition: 300ms;
+    height: 5px;
+    content: "";
+    position: absolute;
+    background-color: white;
 }
 
 .nav-left {
-	float: left;
+    float: left;
 }
 
 .nav-right {
-	float: right;
+    float: right;
 }
 
 .underline-ltr::before {
-	width: 0%;
-	bottom: 5px;
-
+    width: 0%;
+    bottom: 5px;
 }
 
 .underline-ltr:hover::before {
-	width: 100%;
+    width: 100%;
 }
 
 .nav-bottom {
-	width: 20%;
-	height: 50px;
+    width: 20%;
+    height: 50px;
     margin-left: 40%;
-	margin-bottom: 10px; 
-	margin-top: 100px; 
-	text-align: center;
-	bottom: 0;
+    margin-bottom: 10px; 
+    margin-top: 100px; 
+    text-align: center;
+    bottom: 0;
 }
 
 .item {
-	text-align: center;
-	margin-top: 150px;
-	margin-bottom: 100px;
-	color: white;
-	font-family: Arial;
-}
-
-.item > .header {
-	text-decoration: bold;
-	margin-top: 20px;
-	margin-bottom: 0;
-	color: white;
+    text-align: center;
+    margin-top: 150px;
+    margin-bottom: 100px;
+    color: white;
+    font-family: Arial;
 }
 
 .description {
-	margin-top: 0;
-	color: white;
+    margin-top: 0;
+    color: white;
 }
 
 .description-end {
-	margin: 0;
-	color: white;
-	margin-top: 10px;
+    margin: 0;
+    color: white;
+    margin-top: 10px;
     display: none;
     font-size:16px;
-	font-weight: normal;
+    font-weight: normal;
 }
 
 p:hover .description-end {
@@ -188,87 +169,82 @@ p:hover .description-end {
 
 p.description-end:hover  {
     display: inline-block;
-	opacity: 100%;
-	background: white;
-	transition: all 3000ms ease-in-out 0s;
+    opacity: 100%;
+    background: white;
+    transition: all 3000ms ease-in-out 0s;
 }
 
 .resume {
-	width: 10%;
-	text-align: center;
-	display: inline-block;
-	color: white;
-	background: black;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	margin-top: 10px;
-	margin-bottom: 10px;
-	margin-left: 45%;
-	border-color: black;
-	border-width: 1px;
-	border-style: solid;
-	cursor: pointer;
-	transition: all 300ms ease-in-out 0s;
+    width: 10%;
+    text-align: center;
+    display: inline-block;
+    color: white;
+    background: black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 45%;
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+    cursor: pointer;
+    transition: all 300ms ease-in-out 0s;
 }
 
 .resume:hover {
-	border-color: #eeeeee;
-	border-width: 1px;
-	border-style: solid;
-	transition: all 300ms ease-in-out 0s;
+    border-color: #eeeeee;
+    border-width: 1px;
+    border-style: solid;
+    transition: all 300ms ease-in-out 0s;
 }
 
 .icon {
-	width: 40px;
-	height: 40px;
-	margin-top: 5px;
-	margin-bottom: 5px;
-	cursor: pointer;
-	transition: all 300ms ease-in-out 0s;
+    width: 40px;
+    height: 40px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    transition: all 300ms ease-in-out 0s;
 }
 
 .icon:hover {
-	width: 50px;
-	height: 50px;
-	margin-top: 0px;
-	margin-bottom: 0px;
-	transition: all 300ms ease-in-out 0s;
+    width: 50px;
+    height: 50px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    transition: all 300ms ease-in-out 0s;
 }
 
 .list-content {
-	/*margin-top: 50px;*/
-	margin-bottom: 85px;
-	margin-left: 0;
+    margin-bottom: 85px;
+    margin-left: 0;
 }
 
 .list-subcontent {
-	margin-left: 30px;
-    /*background: #1c1c1c;*/
-    /*height: 50px;*/
+    margin-left: 30px;
     left: 50%;
-    /*padding-bottom: 15px;*/
     padding-left: 20%;
     padding-right: 20%;
-    /*padding-top: 15px;*/
     transition: all 0.5s;
 }
 
 .link:hover {
-	opacity: 1;
-	border-width: 2px;
-	border-style: solid;
+    opacity: 1;
+    border-width: 2px;
+    border-style: solid;
 }
 
 .nav-bottom .element{
-	width: 50px;
-	height: 50px;
-	text-align: center;
-	display: inline-block;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    display: inline-block;
 }
 
 .header { 
     font-size:18px;
-	font-weight: bold;
+    font-weight: bold;
 }
 
 /*https://makitweb.com/html-how-to-show-text-above-image-on-hover/*/
@@ -279,128 +255,127 @@ p.description-end:hover  {
 
 /*Child container*/
 .caption div{
-	position: ;
-	bottom: 0;
-	right: 0;
-	background: black;
-	color: white;
-	margin-bottom: 5px;
-	font-family: sans-serif;
-	opacity: 0;
-	visibility: hidden;
-	-webkit-transition: visibility 0s, opacity 0.5s linear; 
-	transition: visibility 0s, opacity 0.5s linear;
+    position: ;
+    bottom: 0;
+    right: 0;
+    background: black;
+    color: white;
+    margin-bottom: 5px;
+    font-family: sans-serif;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: visibility 0s, opacity 0.5s linear; 
+    transition: visibility 0s, opacity 0.5s linear;
 }
 
 /* Hover on Parent Container */
 .caption:hover{
- cursor: pointer;
+    cursor: pointer;
 }
 
 .caption:hover div{
- width: 150px;
- padding: 8px 15px;
- visibility: visible;
- opacity: 0.7; 
+    width: 150px;
+    padding: 8px 15px;
+    visibility: visible;
+    opacity: 0.7; 
 }
 
 .caption:active div{
- width: 150px;
- padding: 8px 15px;
- visibility: visible;
- opacity: 0.7; 
+    width: 150px;
+    padding: 8px 15px;
+    visibility: visible;
+    opacity: 0.7; 
 }
 
 a {
-	color: #eb4d4d;	
+    color: #eb4d4d; 
 }
 
-a:link {	
-	text-decoration:none
+a:link {    
+    text-decoration:none
 }
 
-a:visited {	
-	text-decoration:none
+a:visited { 
+    text-decoration:none
 }
 
-a:hover {	
-	text-decoration:none
+a:hover {   
+    text-decoration:none
 }
 
 a:active {
-	font-weight: normal;
+    font-weight: normal;
 }
 
 
 .column-left {
-  float: left;
-  width: 40%;
+    float: left;
+    width: 40%;
 }
 
 .column-right {
-  float: left;
-  width: 60%;
+    float: left;
+    width: 60%;
 }
 
 /* Clear floats after image containers */
 .row::after {
-  content: "";
-  clear: both;
-  display: table;
+    content: "";
+    clear: both;
+    display: table;
 }
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 750px) {
-  .column-left {
+    .column-left {
     width: 100%;
-  }
-  .column-right {
+    }
+    .column-right {
     width: 100%;
-  }
+    }
 }
 
 /*https://www.w3schools.com/howto/howto_js_hover_tabs.asp*/
 /* Style the tab */
 .tab {
-  float: left;
-  border: 1px solid #ccc;
-  background-color: #f1f1f1;
-  width: 100%;
-  height: 420px;
+    float: left;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    width: 100%;
 }
 
 /* Style the buttons that are used to open the tab content */
 .tab button {
-  display: block;
-  background-color: inherit;
-  color: black;
-  padding: 22px 16px;
-  width: 100%;
-  border: none;
-  outline: none;
-  text-align: left;
-  cursor: pointer;
+    display: block;
+    background-color: inherit;
+    color: black;
+    padding: 22px 16px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
 }
 
 /* Change background color of buttons on hover */
 .tab button:hover {
-  background-color: #ddd;
+    background-color: #ddd;
 }
 
 /* Create an active/current "tab button" class */
 .tab button.active {
-  background-color: #ccc;
+    background-color: #ccc;
 }
 
 /* Style the tab content */
 .tabcontent {
-  float: left;
-  padding: 0px 12px;
-  /*border: 1px solid #ccc;*/
-  width: 100%;
-  border-left: none;
-  height: 420px;
-  display: none;
+    float: left;
+    padding: 0px 12px;
+    /*border: 1px solid #ccc;*/
+    width: 100%;
+    border-left: none;
+    height: 420px;
+    display: none;
 }
 
 /*https://www.w3schools.com/howto/howto_js_slideshow.asp*/
@@ -408,42 +383,42 @@ a:active {
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
 }
 
 /* Hide the images by default */
 .mySlides {
-  display: none;
-  text-align: center;
+    display: none;
+    text-align: center;
 }
 
 /* Next & previous buttons */
 .prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
 }
 
 /* Position the "next button" to the right */
 .next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
+    right: 0;
+    border-radius: 3px 0 0 3px;
 }
 
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+    background-color: rgba(0,0,0,0.8);
 }
 
 /* Caption text */
@@ -480,25 +455,25 @@ a:active {
 
 /*fix this*/
 .active, .dot:hover { 
-  background-color: #707070;
+    background-color: #707070;
 }
 
 /* Fading animation */
 .fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
 }
 
 @-webkit-keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
+    from {opacity: .4}
+    to {opacity: 1}
 }
 
 @keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
+    from {opacity: .4}
+    to {opacity: 1}
 }
     
 /*from cardadfar.com*/
@@ -535,5 +510,5 @@ a:active {
 }
 
 .margin-top-40{
-	margin-top: 40px;
+    margin-top: 40px;
 }
