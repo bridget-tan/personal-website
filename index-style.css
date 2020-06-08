@@ -339,7 +339,7 @@ a:active {
 /* Style the tab */
 .tab {
     float: left;
-    border: 1px solid #ccc;
+    /*border: 1px solid #ccc;*/
     background-color: #f1f1f1;
     width: 100%;
 }
@@ -511,4 +511,188 @@ a:active {
 
 .margin-top-40{
     margin-top: 40px;
+}
+
+
+.tabs {
+    width: 45%;
+    margin-left: 15%;
+    overflow: hidden;
+    background-color: #1c1c1c;
+}
+
+.tab-year {
+    /*width: 25%;*/
+    height: 40px;
+    transition: all 0.5s;
+}
+
+.tab-year:hover {
+    background-color: rgb(245, 245, 245);
+}
+
+.tab-content {
+    /*width: 80%;*/
+    /*margin-left: 10%;*/
+    overflow: hidden;
+    background: whitesmoke;
+}
+
+.tab-content > #left {
+    /*width: 50%;
+    float: left;*/
+}
+
+.course {
+    cursor: pointer;
+    background-color: whitesmoke;
+}
+
+.course > .left-text {
+    float: left;
+    text-align: left;
+    width: 60%;
+    margin-left: 10%;
+    margin-right: 0%;
+    margin-bottom: 0;
+    font-size: 15px;
+}
+
+.course-title > .left-text-title {
+    float: left;
+    text-align: left;
+    /*width: 60%;*/
+    margin-left: 5%;
+    margin-right: 0%;
+    font-size: 15px;
+    margin-bottom: 7px;
+    /*background-color: gainsboro;*/
+}
+
+.course > .right-text {
+    float: left;
+    text-align: right;
+    /*color:grey;*/
+    width: 20%;
+    margin-left: 0%;
+    margin-right: 10%;
+    margin-bottom: 0;
+    font-size: 15px;
+}
+
+.year-text {
+    font-size: 15px;
+    width: 100%;
+    margin: 0 0 0 0;
+    text-align: center;
+}
+
+.year-box {
+  position: absolute;
+  font-size: 12px;
+  width: 11.25%;
+  margin: 0 0 0 0;
+  /*background: rgba(43, 43, 43, 0.72);*/
+  color: dimgrey;
+  visibility: hidden;
+  opacity: 0;
+  text-align: center;
+  transition: opacity .2s, visibility .2s;
+}
+
+.course-box {
+  position: relative;
+  float: left;
+  font-size: 12px;
+  color: #a8a8a8;
+  margin: 0 0 0 0;
+  margin-top: 8px;
+  margin-bottom: 10px;
+  margin-left: 10%;
+  color: dimgrey;
+  width: auto;
+  visibility: hidden;
+  opacity: 0;
+  text-align: left;
+  transition: 1s ease-in-out;
+  transition: -webkit-transform 0.8s ease;
+}
+
+#year1-tab:hover #year-box1 {
+  visibility: visible;
+  opacity: 1;
+  animation-name: myFrames;
+  animation-duration: 0.2s;
+}
+
+#year2-tab:hover #year-box2 {
+  visibility: visible;
+  opacity: 1;
+  animation-name: myFrames;
+  animation-duration: 0.2s;
+}
+
+#year3-tab:hover #year-box3 {
+  visibility: visible;
+  opacity: 1;
+  animation-name: myFrames;
+  animation-duration: 0.2s;
+}
+
+#year4-tab:hover #year-box4 {
+  visibility: visible;
+  opacity: 1;
+  animation-name: myFrames;
+  animation-duration: 0.2s;
+}
+
+#year5-tab:hover #year-box5 {
+  visibility: visible;
+  opacity: 1;
+  animation-name: myFrames;
+  animation-duration: 0.2s;
+}
+
+#year6-tab:hover #year-box6 {
+  visibility: visible;
+  opacity: 1;
+  animation-name: myFrames;
+  animation-duration: 0.2s;
+}
+
+@keyframes myFrames {
+    from {transform: translate(0, -10px);}
+    to {transform: translate(0, 0);}
+}
+
+.course {
+    overflow: auto;
+    padding-top: 5px;
+    transition: all 0.2s;
+}
+
+.course:hover {
+    background: rgba(0, 0, 0, 0.15);
+    transform: scale(1.03);
+}
+
+.sub-title {
+    font-size: 30px;
+}
+
+#C-F15-01:hover #course-box-F15-01 {
+    visibility: visible;
+    opacity: 100;
+}
+#C-F15-02:hover #course-box-F15-02 {
+    visibility: visible;
+    opacity: 100;
+}
+#C-F15-03:hover #course-box-F15-03 {
+    visibility: visible;
+    opacity: 100;
+}
+#C-F15-04:hover #course-box-F15-04 {
+    visibility: visible;
+    opacity: 100;
 }

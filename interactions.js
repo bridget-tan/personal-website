@@ -81,3 +81,43 @@ function showDivs(divObject, n) {
   }
   divObject.slideContents[divObject.slideIndex - 1].style.display = "block";
 }
+
+function onclick(event) {
+  openTab('year1', 'year1-tab')
+}
+function onclick(event) {
+  openTab('summer1', 'summer1-tab')
+}
+function onclick(event) {
+  openTab('year2', 'year2-tab')
+}
+function onclick(event) {
+  openTab('year3', 'year3-tab')
+}
+function onclick(event) {
+  openTab('year4', 'year4-tab')
+}
+function onclick(event) {
+  openTab('year5', 'year5-tab')
+}
+function onclick(event) {
+  openTab('year6', 'year6-tab')
+}
+function openTab(tabName, tab) {
+
+    var i, tabcontent, tablinks;
+
+    tablinks = document.getElementsByClassName("tab-year");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].style.background = null;
+        }
+
+    document.getElementById(tab).style.background = "rgb(245, 245, 245)";
+
+    tabcontent = document.getElementsByClassName("tab-content");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+
+    document.getElementById(tabName).style.display = "block";
+}
