@@ -87,6 +87,7 @@ body {
     text-decoration: none;
     opacity: 1;
     position: relative;
+    cursor: pointer;
 }
 
 .nav-bar .element {
@@ -100,6 +101,7 @@ body {
     text-decoration: none;
     opacity: 1;
     position: relative;
+    cursor: pointer;
 }
 
 .nav-bar .element:hover {
@@ -342,6 +344,7 @@ a:active {
     /*border: 1px solid #ccc;*/
     background-color: #f1f1f1;
     width: 100%;
+    cursor: pointer;
 }
 
 /* Style the buttons that are used to open the tab content */

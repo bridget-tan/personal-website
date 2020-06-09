@@ -13,6 +13,10 @@ $("#github").click(function() {
     window.open("https://github.com/bridget-tan", '_blank');
 });
 
+$("#title").click(function() {
+    window.location.href = "https://bridget-tan.github.io/personal-website/";
+});
+
 function openCity(evt, cityName) {
   // Declare all variables
   var i, tabcontent, tablinks;
@@ -84,9 +88,6 @@ function showDivs(divObject, n) {
 
 function onclick(event) {
   openTab('year1', 'year1-tab')
-}
-function onclick(event) {
-  openTab('summer1', 'summer1-tab')
 }
 function onclick(event) {
   openTab('year2', 'year2-tab')
