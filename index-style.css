@@ -70,6 +70,8 @@ body {
     background: black;
     position: sticky;
     position: -webkit-sticky; 
+    display: block;
+    z-index: 5;
     top: 0; 
     opacity: 0.87;
 }
@@ -504,7 +506,7 @@ a:active {
     margin-left: 2%;
     margin-top: 5px;
     margin-bottom: 0px;
-    color: #9b9b9b;
+    color: #bebebe;
     transition: all 0.5s;
 }
 
@@ -588,12 +590,13 @@ a:active {
     width: 100%;
     margin: 0 0 0 0;
     text-align: center;
+    padding-top: 10px;
 }
 
 .year-box {
-  position: absolute;
-  font-size: 12px;
-  width: 11.25%;
+  /*position: absolute;*/
+  font-size: 10px;
+  /*width: 11.25%;*/
   margin: 0 0 0 0;
   /*background: rgba(43, 43, 43, 0.72);*/
   color: dimgrey;
@@ -698,4 +701,20 @@ a:active {
 #C-F15-04:hover #course-box-F15-04 {
     visibility: visible;
     opacity: 100;
+}
+
+/**/
+.expskills {
+    font-size: 13px;
+    margin-left: 2%;
+    opacity: 0.9;
+    display: block;
+    z-index: 1;
+}
+#rcorners1 {
+    border-radius: 25px;
+    background: #eb4d4d;
+    padding: 5px; 
+    display:inline-block;
+    margin-right: 5px;
 }
