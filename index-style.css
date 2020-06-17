@@ -71,9 +71,9 @@ body {
     position: sticky;
     position: -webkit-sticky; 
     display: block;
-    z-index: 5;
+    z-index: 99;
     top: 0; 
-    opacity: 0.87;
+    opacity: 0.92;
 }
 
 .nav-bar > .title {
@@ -98,7 +98,7 @@ body {
     color: white;
     display: inline-block;
     background: black;
-    margin: 0px 20px;
+    margin: 0px 15px;
     font-weight: bold;
     text-decoration: none;
     opacity: 1;
@@ -795,3 +795,53 @@ a:active {
     display:inline-block;
     margin-right: 5px;
 }
+
+.parallax-img {
+    position: relative;
+    opacity: 0.65;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.fixed {
+    position: fixed;
+}
+
+.row-img {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column-img {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column-img img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column-img {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column-img {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+/**/
