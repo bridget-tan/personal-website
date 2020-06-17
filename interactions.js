@@ -99,6 +99,26 @@ function openTab(tabName, tab) {
     document.getElementById(tabName).style.display = "block";
 }
 
+// https://stackoverflow.com/questions/476679/preloading-images-with-jquery
+function preload(arrayOfImages) {
+    $(arrayOfImages).each(function () {
+        $('<img />').attr('src',this).appendTo('body').css('display','none');
+    });
+}
+
+// Usage:
+
+preload([
+    'images/sakura.JPG',
+    'images/concert1.jpg',
+    'images/hyacinth.jpg',
+    'images/liondance.jpg',
+    'images/butterfly.JPG',
+    'images/esprite.jpg',
+    'images/tech1.JPG'
+]);
+
+
 
 
 function openCity(evt, cityName) {
