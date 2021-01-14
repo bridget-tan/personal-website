@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <!-- saved from url=(0079)https://cardadfar.github.io/stuco_webdev_website/assets/files/html_starter.html -->
 <!-- some code adapted from https://dominic-calkosz.com/about 
-	and https://cardadfar.github.io/stuco_webdev_website
+    and https://cardadfar.github.io/stuco_webdev_website
 -->
 <!--
-	Underline animation adapted from https://codepen.io/sreisner/pen/yOOOjx
+    Underline animation adapted from https://codepen.io/sreisner/pen/yOOOjx
 -->
 <html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     
@@ -17,193 +17,345 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 <body>
-    <div class="nav-bar">
-    	<div class="title" id="title"> Bridget Tan </div>
-    	<div class="nav-right">
-	    	<a href="https://bridget-tan.github.io/personal-website/" class="element underline-ltr"> 
-	    		About Me
-	    	</a>
-	    	<a href="projects.html" class="element underline-ltr"> 
-	    		Projects 
-	    	</a>
-	    	<a href="skills.html" class="element underline-ltr"> 
-	    		Skills 
-	    	</a>
-	    	<a href="experience.html" class="element underline-ltr"> 
-	    		Experience 
-	    	</a>
+    <div class="nav-bar fixed">
+        <div class="title" id="title"> Bridget Tan </div>
+        <div class="nav-right">
+            <a href="https://bridget-tan.github.io/personal-website/" class="element underline-ltr"> 
+                About Me
+            </a>
+            <a href="projects.html" class="element underline-ltr"> 
+                Projects 
+            </a>
+            <a href="skills.html" class="element underline-ltr"> 
+                Skills 
+            </a>
+            <a href="experience.html" class="element underline-ltr"> 
+                Experience 
+            </a>
             <a href="interests.html" class="element underline-ltr"> 
                 Interests 
             </a>
-	    	<div class="element underline-ltr" id="resume"> 
-	    		Resume 
-	    	</div>
-	    	<a href="contact.html" class="element underline-ltr"> 
-	    		Contact 
-	    	</a>
-    	</div>
+            <div class="element underline-ltr" id="resume"> 
+                Resume 
+            </div>
+            <a href="contact.html" class="element underline-ltr"> 
+                Contact 
+            </a>
+        </div>
     </div>
 
+    <div style="height: 50px"></div>
 
-	<div class=content style="width: 74%; margin-left: 13%">
-		<div class="list-content">
-	    	<h1 class="center">Projects</h1>
-	    	<div style="height: 10px"></div>
-	    	<div class="row">
-				<div class="column-left" style="background-color: black; width: 20%">
-					<div class="tab">
-						<button class="tablinks" onclick="openCity(event, 'pw')" id="defaultOpen">Personal Website</button>
-						<button class="tablinks" onclick="openCity(event, 'toy-camera')">Toy Camera</button>
-						<button class="tablinks" onclick="openCity(event, 'chiptune')">Chiptune/8-Bit Effect</button>
-						<button class="tablinks" onclick="openCity(event, 'lang-ID')">Language Identification System</button>
-						<button class="tablinks" onclick="openCity(event, 'window-robot')">Window Washing Robot</button>
-						<button class="tablinks" onclick="openCity(event, 'dialog-sys')">Dialog System</button>
-						<button class="tablinks" onclick="openCity(event, 'exergame')">Exergames For Preschool Children</button>
-						<button class="tablinks" onclick="openCity(event, 'kernel')">Embedded Real Time Kernel</button>
-						<button class="tablinks" onclick="openCity(event, 'platformer')">Custom Platformer Game</button>
-					</div>
-			
-				</div>
-				<div class="column-right" style="width: 80%; padding-left: 10px;">
-					<div id="pw" class="tabcontent">
-						<h3>January 2020 - Present</h3>
-						<p>I made this personal website for <a href="https://cardadfar.github.io/stuco_webdev_website/index.html" target="_blank">StuCo: Building Personal Websites</a>, a student-taught course. Through this class, I learned the basics of website design, HTML, CSS, JavaScript, and jQuery. I will continue to use those skills to update this website.<br><br>A lot of the code on this website was developed myself based on what I learned in the class and <a href="https://www.w3schools.com" target="_blank">w3schools.com</a> or adapted from other websites. Please reach out to me if you have any feedback on my website or tips on website development. I'm eager to learn more!</p> 
-					</div>
+    <div class="content">
+        <h1 class="center">Projects</h1>
+        <!-- Row -->
+        <div class="column">
+            <div class="row">
+                <div class="project-container" onclick="openModal();currentModal(9)" id="personal-website">
+                    <img src="images/projects/website.png" class="project-image">
+                    <div class="project-middle">
+                        <div class="project-text">
+                            <h2>Personal Website</h2>
+                            <h3>January 2020 - Present</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>     
 
-					<div id="toy-camera" class="tabcontent">
-						<!-- Slideshow container -->
-						<div class="slideshow-container slider" id="div1">
+            <div class="row">
+                <div class="project-container" onclick="openModal();currentModal(7)" id="chiptune">
+                    <img src="images/projects/waveform.png" class="project-image">
+                    <div class="project-middle">
+                        <div class="project-text">
+                            <h2>Chiptune Effect</h2>
+                            <h3>Fall 2019</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>       
 
-							<!-- Full-width images with number and caption text -->
-							<div class="mySlides fade">
-								<div class="numbertext">1 / 2</div>
-								<img src="images/toy-camera1.jpg" style="max-height: 350px; max-width: 100%">
-								<div class="text">Toy camera front</div>
-							</div>
+            <div class="row">
+                <div class="project-container" onclick="openModal();currentModal(5)" id="window-robot">
+                    <img src="images/projects/window-washing-robot.jpg" class="project-image">
+                    <div class="project-middle">
+                        <div class="project-text">
+                            <h2>Window Washing Robot</h2>
+                            <h3>Spring 2019</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>   
+            <div class="row">
+                <div class="project-container" onclick="openModal();currentModal(3)" id="exergame">
+                    <img src="images/projects/flanker.png" class="project-image">
+                    <div class="project-middle">
+                        <div class="project-text">
+                            <h2>Exergames for Preschool Children</h2>
+                            <h3>May 2017 - September 2018</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>    
+            <div class="row">
+                <div class="project-container" onclick="openModal();currentModal(1)" id="platformer">
+                    <img src="images/projects/platformer.png" class="project-image">
+                    <div class="project-middle">
+                        <div class="project-text">
+                            <h2>Custom Platformer Game</h2>
+                            <h3>Fall 2015</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>        
+        </div> 
 
-							<div class="mySlides fade">
-								<div class="numbertext">2 / 2</div>
-								<img src="images/toy-camera2.jpg" style="max-height: 350px; max-width: 100%">
-								<div class="text">Toy camera back</div>
-							</div>
+        <!-- Row -->
+        <div class="column">
+            <div class="row">
+                <div class="project-container" onclick="openModal();currentModal(8)" id="toy-camera">
+                    <img src="images/projects/toy-camera1.jpg" class="project-image">
+                    <div class="project-middle">
+                        <div class="project-text">
+                            <h2>Toy Camera</h2>
+                            <h3>February 2020</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>  
+            <div class="row">
+                <div class="project-container" onclick="openModal();currentModal(6)" id="lang-ID">
+                    <img src="images/projects/language.png" class="project-image">
+                    <div class="project-middle">
+                        <div class="project-text">
+                            <h2>Language Identification System</h2>
+                            <h3>Fall 2019</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>      
+            <div class="row">
+                <div class="project-container" onclick="openModal();currentModal(4)" id="dialog-sys">
+                    <img src="images/projects/echo.jpg" class="project-image">
+                    <div class="project-middle">
+                        <div class="project-text">
+                            <h2>Dialog System</h2>
+                            <h3>November 2018</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>     
+            <div class="row">
+                <div class="project-container" onclick="openModal();currentModal(2)" id="kernel">
+                    <img src="images/projects/pi.jpg" class="project-image">
+                    <div class="project-middle">
+                        <div class="project-text">
+                            <h2>Embedded Real Time Kernel</h2>
+                            <h3>Spring 2018</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>    
+            <div class="row" style="height: 300px; width: 100%; position: relative">
+                <div class="project-container" id="placeholder">
+                </div>
+            </div>            
+        </div>
 
-							<a class="prev" onclick="plusDivs(this, -1)">&#10094;</a>
-  							<a class="next" onclick="plusDivs(this, 1)">&#10095;</a>
-						</div>
+    </div> 
+
+    <!-- Modal -->
+    <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+
+            <div class="project-description content center">
+                <h1> Personal Website </h1>
+                <div class="expskills">
+                    <p id="rcorners1">Web Development</p>
+                    <p id="rcorners1">Independent</p>
+                </div>
+                <h4>I made this personal website for <a href="https://cardadfar.github.io/stuco_webdev_website/index.html" target="_blank">StuCo: Building Personal Websites</a>, a student-taught course. Through this class, I learned the basics of website design, HTML, CSS, JavaScript, and jQuery. I will continue to use those skills to update this website.<br><br>A lot of the code on this website was developed myself based on what I learned in the class and <a href="https://www.w3schools.com" target="_blank">w3schools.com</a> or adapted from other websites. Please reach out to me if you have any feedback on my website or tips on website development. I'm eager to learn more!</h4>
+            </div>
+
+            <div class="project-description content center">
+                <h1> Toy Camera </h1>
+                <div class="expskills">
+                    <p id="rcorners1">Maker</p>
+                    <p id="rcorners1">Team</p>
+                </div>
+                <!-- Slideshow container -->
+                <div class="slideshow-container slider" id="div1">
+
+                    <!-- Full-width images with number and caption text -->
+                    <div class="mySlides fade">
+                        <div class="numbertext">1 / 2</div>
+                        <img src="images/projects/toy-camera1.jpg" style="max-height: 350px; max-width: 100%">
+                        <div class="text">Toy camera front</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">2 / 2</div>
+                        <img src="images/projects/toy-camera2.jpg" style="max-height: 350px; max-width: 100%">
+                        <div class="text">Toy camera back</div>
+                    </div>
+
+                    <p class="prev" onclick="plusDivs(this, -1)">&#10094;</p>
+                    <p class="next" onclick="plusDivs(this, 1)">&#10095;</p>
+                </div>
 
 
-						<!-- The dots/circles -->
-						<div style="text-align:center">
-						  <span class="dot" onclick="currentSlide(1)"></span>
-						  <span class="dot" onclick="currentSlide(2)"></span>
-						</div>
-						<h3>February 2020</h3>
-						<p>My group of 3 fabricated a toy camera for our Intro to Making course. We assembled a frame from laser cut and 3D printed pieces and used an Arduino, electronics, and LEDs to replicate a real camera's functions. You could scope the lens in and out, press a button to turn on the camera , and press a button to identify the color in front of the lens and display it on an LED array. Unfortunately, the LED array broke and isn't assembled in the photos above. Turning on and pressing the shutter button have audio and visual feedback via a piezoelectric speaker and a red LED. I was in charge of programming the electronics and assembling the circuits.</p>
-					</div>
+                <!-- The dots/circles -->
+                <div style="text-align:center">
+                  <span class="dot" onclick="currentSlide(1)"></span>
+                  <span class="dot" onclick="currentSlide(2)"></span>
+                </div>
+                <h4>My group of 3 fabricated a toy camera for our Intro to Making course. We assembled a frame from laser cut and 3D printed pieces and used an Arduino, electronics, and LEDs to replicate a real camera's functions. You could scope the lens in and out, press a button to turn on the camera , and press a button to identify the color in front of the lens and display it on an LED array. Unfortunately, the LED array broke and isn't assembled in the photos above. Turning on and pressing the shutter button have audio and visual feedback via a piezoelectric speaker and a red LED. I was in charge of programming the electronics and assembling the circuits.</h4>
+            </div>
 
-					<div id="chiptune" class="tabcontent">
-						<h3>Fall 2019</h3>
-						<p>Using Nyquist, a sound synthesis and composition language, I wrote a chiptune/8-bit effect library. Users can use the library to input an audio sample and output a chiptune-like version. The start time, duration, and note ranges can be specified. Users could also use functions to mix the original and chiptune sounds and fade them in and out of one another.</p>
-					</div>	
+            <div class="project-description content center">
+                <h1> Chiptune Effect </h1>
+                <div class="expskills">
+                    <p id="rcorners1">CS</p>
+                    <p id="rcorners1">Class Project</p>
+                    <p id="rcorners1">Independent</p>
+                </div>
+                <h4>Using Nyquist, a sound synthesis and composition language, I wrote a chiptune/8-bit effect library. Users can use the library to input an audio sample and output a chiptune-like version. The start time, duration, and note ranges can be specified. Users could also use functions to mix the original and chiptune sounds and fade them in and out of one another.</h4>
+            </div>
 
-					<div id="lang-ID" class="tabcontent">
-						<h3>Fall 2019</h3>
-						<p>For our Speech Recognition course project, I collaborated with two teammates to design a successful language identification system for English, German, and Mandarin Chinese speech. The system used phones for identifying the language. We developed the system and baseline comparisons using Python in Google Colab.<br><br> For our <a href="https://drive.google.com/file/d/1qSzUatCmelS3LLjeaT6RmN-2aO2L_tPA/view?usp=sharing" target="_blank">project poster</a>.</p>
-					</div>	
+            <div class="project-description content center">
+                <h1> Language Identification System </h1>
+                <div class="expskills">
+                    <p id="rcorners1">CS</p>
+                    <p id="rcorners1">Class Project</p>
+                    <p id="rcorners1">Team</p>
+                </div>
+                <h4>For our Speech Recognition course project, I collaborated with two teammates to design a successful language identification system for English, German, and Mandarin Chinese speech. The system used phones for identifying the language. We developed the system and baseline comparisons using Python in Google Colab.<br><br> For our <a href="https://drive.google.com/file/d/1qSzUatCmelS3LLjeaT6RmN-2aO2L_tPA/view?usp=sharing" target="_blank">project poster</a>.</h4>
+            </div>
 
-					<div id="window-robot" class="tabcontent">
-						<!-- Slideshow container -->
-						<div class="slideshow-container slider" id="div2">
+            <div class="project-description content center">
+                <h1> Window Washing Robot </h1>
+                <div class="expskills">
+                    <p id="rcorners1">Robotics</p>
+                    <p id="rcorners1">Class Project</p>
+                    <p id="rcorners1">Team</p>
+                </div>
+                <!-- Slideshow container -->
+                <div class="slideshow-container slider" id="div2">
 
-							<!-- Full-width images with number and caption text -->
-							<div class="mySlides fade">
-								<div class="numbertext">1 / 2</div>
-								<img src="images/window-washing-robot.jpg" style="max-height: 350px; max-width: 100%">
-								<div class="text">Window Washing Robot</div>
-							</div>
+                    <!-- Full-width images with number and caption text -->
+                    <div class="mySlides fade">
+                        <div class="numbertext">1 / 2</div>
+                        <img src="images/projects/window-washing-robot.jpg" style="max-height: 350px; max-width: 100%">
+                        <div class="text">Window Washing Robot</div>
+                    </div>
 
-							<div class="mySlides fade">
-								<div class="numbertext">2 / 2</div>
-								<img src="images/robot-demo-img.png" style="max-height: 350px; max-width: 100%">
-								<div class="text">Image from our final demo</div>
-							</div>
+                    <div class="mySlides fade">
+                        <div class="numbertext">2 / 2</div>
+                        <img src="images/projects/robot-demo-img.png" style="max-height: 350px; max-width: 100%">
+                        <div class="text">Image from our final demo</div>
+                    </div>
 
-							<a class="prev" onclick="plusDivs(this, -1)">&#10094;</a>
-  							<a class="next" onclick="plusDivs(this, 1)">&#10095;</a>
-							</div>
+                    <p class="prev" onclick="plusDivs(this, -1)">&#10094;</p>
+                    <p class="next" onclick="plusDivs(this, 1)">&#10095;</p>
+                    </div>
 
-						<!-- The dots/circles -->
-						<div style="text-align:center">
-						  <span class="dot" onclick="currentSlide(1)"></span>
-						  <span class="dot" onclick="currentSlide(2)"></span>
-						</div>
+                <!-- The dots/circles -->
+                <div style="text-align:center">
+                  <span class="dot" onclick="currentSlide(1)"></span>
+                  <span class="dot" onclick="currentSlide(2)"></span>
+                </div>
+                <h4>For my undergraduate capstone, my team of 5 developed an autonomous robot that can automatically adhere to and navigate over a window pane, cross over a barrier, and clean a 5' x 6' total area in under 3 minutes. The device uses ducted propellers to adhere to the window, wheels to move, and a sponge-based mechanism for cleaning. Proximity sensors and an IMU help the robot to navigate. I was in charge of assembling the electronic components and circuitry of the robot. I also helped to develop the control, locomotion, adhesion, sensing, and cleaning subsystems.<br><br> More details about this project can be found on our <a href="https://sites.google.com/view/geickobot/home" target="_blank">capstone website</a>.</h4>
+            </div>
 
-						<h3>Spring 2019</h3>
-						<p>For my undergraduate capstone, my team of 5 developed an autonomous robot that can automatically adhere to and navigate over a window pane, cross over a barrier, and clean a 5' x 6' total area in under 3 minutes. The device uses ducted propellers to adhere to the window, wheels to move, and a sponge-based mechanism for cleaning. Proximity sensors and an IMU help the robot to navigate. I was in charge of assembling the electronic components and circuitry of the robot. I also helped to develop the control, locomotion, adhesion, sensing, and cleaning subsystems.<br><br> More details about this project can be found on our <a href="https://sites.google.com/view/geickobot/home" target="_blank">capstone website</a>.</p>
-					</div>	
+            <div class="project-description content center">
+                <h1> Dialog System </h1>
+                <div class="expskills">
+                    <p id="rcorners1">CS</p>
+                    <p id="rcorners1">Class Project</p>
+                    <p id="rcorners1">Independent</p>
+                </div>
+                <h4>One of the course projects for my Speech Processing class was to build a multi-turn pizza ordering system as an Alexa Skill for Amazon Echos. I created state diagrams and used ngrok and flask-ask to develop servers and dialog for the Alexa skill. Users were able to request Alexa to order a pizza and specify the size, dough type, and toppings over several turns of conversation.</h4>
+            </div>
 
-					<div id="dialog-sys" class="tabcontent">
-						<h3>November 2018</h3>
-						<p>One of the course projects for my Speech Processing class was to build a multi-turn pizza ordering system as an Alexa Skill for Amazon Echos. I created state diagrams and used ngrok and flask-ask to develop servers and dialog for the Alexa skill. Users were able to request Alexa to order a pizza and specify the size, dough type, and toppings over several turns of conversation.</p>
-					</div>
+            <div class="project-description content center">
+                <h1> Exergames for Preschool Children </h1>
+                <div class="expskills">
+                    <p id="rcorners1">CS</p>
+                    <p id="rcorners1">Research</p>
+                    <p id="rcorners1">Team</p>
+                </div>
+                <!-- Slideshow container -->
+                <div class="slideshow-container slider" id="div3">
 
-					<div id="exergame" class="tabcontent">
-						<!-- Slideshow container -->
-						<div class="slideshow-container slider" id="div3">
+                    <!-- Full-width images with number and caption text -->
+                    <div class="mySlides fade">
+                        <div class="numbertext">1 / 2</div>
+                        <img src="images/projects/flanker.png" style="max-height: 350px; max-width: 100%">
+                        <div class="text">Flanker Exergame Tutorial</div>
+                    </div>
 
-							<!-- Full-width images with number and caption text -->
-							<div class="mySlides fade">
-								<div class="numbertext">1 / 2</div>
-								<img src="images/flanker.png" style="max-height: 350px; max-width: 100%">
-								<div class="text">Flanker Exergame Tutorial</div>
-							</div>
+                    <div class="mySlides fade">
+                        <div class="numbertext">2 / 2</div>
+                        <img src="images/projects/gonogo.png" style="max-height: 350px; max-width: 100%">
+                        <div class="text">Go/No-Go Exergame</div>
+                    </div>
+                    <p class="prev" onclick="plusDivs(this, -1)">&#10094;</p>
+                    <p class="next" onclick="plusDivs(this, 1)">&#10095;</p>
+                    </div>
 
-							<div class="mySlides fade">
-								<div class="numbertext">2 / 2</div>
-								<img src="images/gonogo.png" style="max-height: 350px; max-width: 100%">
-								<div class="text">Go/No-Go Exergame</div>
-							</div>
+                <!-- The dots/circles -->
+                <div style="text-align:center">
+                  <span class="dot" onclick="currentSlide(1)"></span>
+                  <span class="dot" onclick="currentSlide(2)"></span>
+                </div>
+                <h4>I worked on a team of six to design and program video games promoting cognitive engagement and physical activity for Ph.D Candidate <a href="https://cassondraeng.github.io/index.html" target="_blank">Cassie Eng's</a> study on the effect of exergames on the cognitive control and school readiness skills of prekindergarten children.</h4>
+                <h4>The games I made were modified versions of the behavioral executive function assessments Flanker and Go/No-Go. The exergame based on the Flanker task became the basis of the study. When playing the Flanker exergame, children stepped on the left or right arrows of a physical game mat depending on the direction that the center fish of a row of five faced. Correct inputs rewarded the child and sped up the pace of the game. The game would adapt if the child could not keep up with the game's pace. The exergame based on Go/No-Go also had the child step left or right on the game mat depending on which side of the screen a balloon showed up and what color it was. I designed concepts and graphics, and programmed game mechanics, levels, menus, and more for both games.</h4>
+                <h4>To learn more about this study, see this <a href="https://www.researchgate.net/profile/Cassondra_Eng/publication/341654844_Adaptations_of_Executive_Function_and_Prefrontal_Cortex_Connectivity_Following_Exergame_Play_in_4-to_5-year_old_Children/links/5ecd6b1945851529451461c9/Adaptations-of-Executive-Function-and-Prefrontal-Cortex-Connectivity-Following-Exergame-Play-in-4-to-5-year-old-Children.pdf" target="_blank">publication</a>.</h4>
+            </div>
 
-							<a class="prev" onclick="plusDivs(this, -1)">&#10094;</a>
-  							<a class="next" onclick="plusDivs(this, 1)">&#10095;</a>
-							</div>
+            <div class="project-description content center">
+                <h1> Embedded Real Time Kernel </h1>
+                <div class="expskills">
+                    <p id="rcorners1">Robotics</p>
+                    <p id="rcorners1">Class Project</p>
+                    <p id="rcorners1">Team</p>
+                </div>
+                <h4> In the culminating course project for our Introduction to Embedded Systems course, my partner and I implemented a real-time Linux kernel module on a Raspberry Pi. We wrote device drivers using GPIO to interface with rotary encoders, DC motors, and PID speed controllers in order to control wheels on two Raspberry Pi’s via ethernet. We also adapted skills and code for UART, I2C, timers, interrupt handlers, and real-time scheduling from previous course projects to complete this cumulative project. </h4>
+            </div>
 
-						<!-- The dots/circles -->
-						<div style="text-align:center">
-						  <span class="dot" onclick="currentSlide(1)"></span>
-						  <span class="dot" onclick="currentSlide(2)"></span>
-						</div>
+            <div class="project-description content center">
+                <h1>Custom Platformer Game</h1>
+                <div class="expskills">
+                    <p id="rcorners1">CS</p>
+                    <p id="rcorners1">Class Project</p>
+                    <p id="rcorners1">Independent</p>
+                </div>
+                <h4>For the final term project in the class Fundamentals of Programming, I designed and developed a game using Python and Pygame. The game includes a sidescrolling stage, menus, and mouse and keyboard controls. Puzzles are solved by drawing specific shapes with the mouse to interact with objects in the environment. It is inspired by the game Okami.</h4>
+                <h4 class="center">An overview video of the game can be found on <a href="https://youtu.be/dYqo75e2ZPQ" target="_blank">Youtube</a>.</h4>
+            </div>
 
-						<h3>May 2017 - September 2018</h3>
-						<p>I worked on a team of six to design and program video games promoting cognitive engagement and physical activity for Ph.D Candidate <a href="https://cassondraeng.github.io/index.html" target="_blank">Cassie Eng's</a> study on the effect of exergames on the cognitive control and school readiness skills of prekindergarten children.</p>
-						<p>The games I made were modified versions of the behavioral executive function assessments Flanker and Go/No-Go. The exergame based on the Flanker task became the basis of the study. When playing the Flanker exergame, children stepped on the left or right arrows of a physical game mat depending on the direction that the center fish of a row of five faced. Correct inputs rewarded the child and sped up the pace of the game. The game would adapt if the child could not keep up with the game's pace. The exergame based on Go/No-Go also had the child step left or right on the game mat depending on which side of the screen a balloon showed up and what color it was. I designed concepts and graphics, and programmed game mechanics, levels, menus, and more for both games.</p>
-						<p>To learn more about this study, see this <a href="https://www.researchgate.net/profile/Cassondra_Eng/publication/341654844_Adaptations_of_Executive_Function_and_Prefrontal_Cortex_Connectivity_Following_Exergame_Play_in_4-to_5-year_old_Children/links/5ecd6b1945851529451461c9/Adaptations-of-Executive-Function-and-Prefrontal-Cortex-Connectivity-Following-Exergame-Play-in-4-to-5-year-old-Children.pdf" target="_blank">publication</a>. </p>
-					</div>	
+            <div class="project-description content center">
+                <h1>Custom Platformer Game</h1>
+                <div class="expskills">
+                    <p id="rcorners1">CS</p>
+                    <p id="rcorners1">Class Project</p>
+                    <p id="rcorners1">Independent</p>
+                </div>
+                <h4>For the final term project in the class Fundamentals of Programming, I designed and developed a game using Python and Pygame. The game includes a sidescrolling stage, menus, and mouse and keyboard controls. Puzzles are solved by drawing specific shapes with the mouse to interact with objects in the environment. It is inspired by the game Okami.</h4>
+                <h4 class="center">An overview video of the game can be found on <a href="https://youtu.be/dYqo75e2ZPQ" target="_blank">Youtube</a>.</h4>
+            </div>
+        </div>
+    </div>
 
-					<div id="kernel" class="tabcontent">
-						<h3>Spring 2018</h3>
-						<p>In the culminating course project for our Introduction to Embedded Systems course, my partner and I implemented a real-time Linux kernel module on a Raspberry Pi. We wrote device drivers using GPIO to interface with rotary encoders, DC motors, and PID speed controllers in order to control wheels on two Raspberry Pi’s via ethernet. We also adapted skills and code for UART, I2C, timers, interrupt handlers, and real-time scheduling from previous course projects to complete this cumulative project.</p>
-					</div>	
-
-					<div id="platformer" class="tabcontent">
-						<h3>Fall 2015</h3>
-						<p>For the final term project in the class Fundamentals of Programming, I designed and developed a game using Python and Pygame. The game includes a sidescrolling stage, menus, and mouse and keyboard controls. Puzzles are solved by drawing specific shapes with the mouse to interact with objects in the environment.</p>
-						<p>An overview video of the game can be found on <a href="https://youtu.be/dYqo75e2ZPQ" target="_blank">Youtube</a>.</p>
-					</div>	
-				</div>
-			</div>
-		</div>
-	</div>    
-
-	<div style="padding-bottom: 15px"></div>
+    <div style="padding-bottom: 15px"></div>
 
     <div class="nav-bottom">
-    	<div class="element">
-			<img id="linkedin" class="icon" src="images/linkedin-icon.png">
-		</div>
-		<div class="element">
-			<img id="github" class="icon" src="images/github-icon.png">
-		</div>
+        <div class="element">
+            <img id="linkedin" class="icon" src="images/linkedin-icon.png">
+        </div>
+        <div class="element">
+            <img id="github" class="icon" src="images/github-icon.png">
+        </div>
     </div>
 
     <script type="text/javascript" src="interactions.js"></script>

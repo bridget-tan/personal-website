@@ -17,6 +17,32 @@ $("#title").click(function() {
     window.location.href = "https://bridget-tan.github.io/personal-website/";
 });
 
+// Modal https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_js_lightbox
+function openModal() {
+  document.getElementById("myModal").style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById("myModal").style.display = "none";
+}
+
+var projectIndex = 10; //number of projects
+function currentModal(n) {
+  showModal(projectIndex = n);
+}
+function showModal(n) {
+  var i;
+  var description = document.getElementsByClassName("project-description");
+  console.log(description.length);
+  console.log(n);
+  if (n > description.length) {projectIndex = 0}
+  if (n < 0) {projectIndex = description.length-1}
+  for (i = description.length-1; i >= 0; i--) {
+      description[i].style.display = "none";
+  }
+  console.log(description.length - projectIndex - 1);
+  description[description.length - projectIndex - 1].style.display = "block";
+}
 
 
 var slideIndex = 1;

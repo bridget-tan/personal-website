@@ -298,6 +298,10 @@ p.description-end:hover  {
     opacity: 0.7; 
 }
 
+h1 {    
+  font-size: 2.5em;
+}
+
 a {
     color: #eb4d4d; 
 }
@@ -319,16 +323,16 @@ a:active {
 }
 
 .row {
-  margin: 8px -16px;
+  margin: 16px 0px;
 }
 
 /* Add padding BETWEEN each column (if you want) */
-.row,
-.row > .column {
-  padding: 8px;
+.column,
+.column > .row {
+  padding: 16px;
 }
 
-/* Create four equal columns that floats next to each other */
+/* Create two equal columns that floats next to each other */
 .column {
   float: left;
   width: 50%;
@@ -860,3 +864,99 @@ a:active {
 }
 
 /**/
+
+/*Project Page Images*/
+/*Based on https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_image_overlay_opacity*/
+.project-container {
+  position: relative;
+  /*padding: 8px;*/
+  cursor: pointer;
+}
+
+.project-image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  /*height: auto;*/
+  transition: .5s ease;
+  backface-visibility: hidden;
+  border-radius: 30px;
+  height: 250px;
+  /*max-width: 100%;*/
+}
+
+.project-middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 25%;
+  width: 100%;
+  /*left: 50%;*/
+  /*transform: translate(-50%, -50%);*/
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.project-container:hover .project-image {
+  opacity: 0.3;
+}
+
+.project-container:hover .project-middle {
+  opacity: 1;
+}
+
+.project-text {
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+
+.project-description {
+    display: none;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.90);
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  color: white;
+  margin: auto;
+  margin-bottom: 100px;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  position: fixed;
+  top: 75px;
+  right: 25px;
+  font-size: 4em;
+  /*font-weight: bold;*/
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.cursor {
+  cursor: pointer;
+}
